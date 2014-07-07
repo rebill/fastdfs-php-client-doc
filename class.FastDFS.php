@@ -184,13 +184,13 @@ class FastDFS
      *
      * @param string $local_filename the local filename
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_by_filename($local_filename, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_filename($local_filename, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload local file to storage server
@@ -198,13 +198,13 @@ class FastDFS
      *
      * @param string $local_filename the local filename
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_by_filename1($local_filename, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_filename1($local_filename, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server
@@ -212,13 +212,13 @@ class FastDFS
      *
      * @param string $file_buff the file content
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_by_filebuff($file_buff, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_filebuff($file_buff, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server
@@ -226,13 +226,13 @@ class FastDFS
      *
      * @param string $file_buff the file content
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_by_filebuff1($file_buff, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_filebuff1($file_buff, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback
@@ -244,13 +244,13 @@ class FastDFS
      *   file_size - the file size
      *   args      - use argument for callback function
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_by_callback(array $callback_array, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_callback(array $callback_array, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback
@@ -261,13 +261,13 @@ class FastDFS
      *   file_size - the file size
      *   args      - use argument for callback function
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_by_callback1(array $callback_array, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_by_callback1(array $callback_array, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * append local file to the appender file of storage server
@@ -438,13 +438,13 @@ class FastDFS
      *
      * @param string $local_filename the local filename
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_appender_by_filename($local_filename, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_filename($local_filename, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload local file to storage server as appender file
@@ -452,13 +452,13 @@ class FastDFS
      *
      * @param string $local_filename the local filename
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_appender_by_filename1($local_filename, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_filename1($local_filename, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server as appender file
@@ -467,13 +467,13 @@ class FastDFS
      *
      * @param string $file_buff the file content
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_appender_by_filebuff($file_buff, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_filebuff($file_buff, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server as appender file
@@ -481,13 +481,13 @@ class FastDFS
      *
      * @param string $file_buff the file content
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_appender_by_filebuff1($file_buff, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_filebuff1($file_buff, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback as appender file
@@ -499,13 +499,13 @@ class FastDFS
      *   file_size - the file size
      *   args      - use argument for callback function
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_appender_by_callback(array $callback_array, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_callback(array $callback_array, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback as appender file
@@ -516,13 +516,13 @@ class FastDFS
      *   file_size - the file size
      *   args      - use argument for callback function
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param string $group_name specify the group name to store the file
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_appender_by_callback1(array $callback_array, $file_ext_name='', $meta_list='', $group_name='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_appender_by_callback1(array $callback_array, $file_ext_name='', $meta_list=array(), $group_name='', $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload local file to storage server (slave file mode)
@@ -533,12 +533,12 @@ class FastDFS
      * @param string $master_filename the master filename to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_slave_by_filename($local_filename, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_filename($local_filename, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload local file to storage server (slave file mode)
@@ -548,12 +548,12 @@ class FastDFS
      * @param string $master_file_id the master file id to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_slave_by_filename1($local_filename, $master_file_id, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_filename1($local_filename, $master_file_id, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server (slave file mode)
@@ -564,12 +564,12 @@ class FastDFS
      * @param string $master_filename the master filename to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_slave_by_filebuff($file_buff, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_filebuff($file_buff, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file buff to storage server (slave file mode)
@@ -579,12 +579,12 @@ class FastDFS
      * @param string $master_file_id the master file id to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_slave_by_filebuff1($file_buff, $master_file_id, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_filebuff1($file_buff, $master_file_id, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback (slave file mode)
@@ -599,12 +599,12 @@ class FastDFS
      * @param string $master_filename the master filename to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return array|bool
      */
-    public function storage_upload_slave_by_callback(array $callback_array, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_callback(array $callback_array, $group_name, $master_filename, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * upload file to storage server by callback (slave file mode)
@@ -617,12 +617,12 @@ class FastDFS
      * @param string $master_file_id the master file id to generate the slave file id
      * @param string $prefix_name the prefix name to generate the slave file id
      * @param string $file_ext_name the file extension name, do not include dot(.)
-     * @param string $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
+     * @param array $meta_list meta data assoc array, such as array('width'=>1024, 'height'=>768)
      * @param array $tracker_server the tracker server assoc array including elements: ip_addr, port and sock
      * @param array $storage_server the storage server assoc array including elements: ip_addr, port and sock
      * @return string|bool
      */
-    public function storage_upload_slave_by_callback1(array $callback_array, $master_file_id, $prefix_name, $file_ext_name='', $meta_list='', $tracker_server=array(), $storage_server=array()){}
+    public function storage_upload_slave_by_callback1(array $callback_array, $master_file_id, $prefix_name, $file_ext_name='', $meta_list=array(), $tracker_server=array(), $storage_server=array()){}
 
     /**
      * delete file from storage server
